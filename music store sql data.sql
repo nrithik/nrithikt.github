@@ -90,32 +90,7 @@ select name, milliseconds from track
 where milliseconds > ( select avg(milliseconds) as avg_milli from track)
 order by milliseconds desc;
 
--- Q9 Find how much amount spent by each customer on artist? Write a query to 
--- return customer name, artist name, total spent.
 
-
-
-
-
-select * from album2;
-select * from employee
-order by levels desc
-limit 1;
-select count(*) as c, billing_country from invoice
-group by billing_country
-order by c desc;
-select * from invoice;
-select total from invoice order by total desc limit 3;
-
-
-
-select sum(total) as s, billing_city from invoice
-group by billing_city
-order by s desc; 
-
-select * from invoice;
-
-select * from customer;
 
 
 
